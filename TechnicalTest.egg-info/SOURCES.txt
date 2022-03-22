@@ -1,0 +1,10 @@
+README.md
+setup.py
+./TechnicalTest/technical_test.py
+TechnicalTest/__init__.py
+TechnicalTest/technical_test.py
+TechnicalTest.egg-info/PKG-INFO
+TechnicalTest.egg-info/SOURCES.txt
+TechnicalTest.egg-info/dependency_links.txt
+TechnicalTest.egg-info/requires.txt
+TechnicalTest.egg-info/top_level.txt
