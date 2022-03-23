@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: TechnicalTest
-Version: 0.3.3
+Version: 0.3.4
 Summary: Technical Test
 Home-page: http://pypi.python.org/pypi/TechnicalTest/
 Author: Marina Lacambra
@@ -18,7 +18,7 @@ This package is aimed to
 
 ## Functions
 ### To clean a twitter dataset
-- _tweet-cleaner_: takes a tweet and removes its hashtags and mentions using tweet-preprocessor
+- _tweet_cleaner_: takes a tweet and removes its hashtags and mentions using tweet-preprocessor
 - _tweet_tokenizer_: takes a tweet as a string and returns a list of its tokens.
 - _tweet_stopword_remover_: takes a tokenized tweet and returns a list of its tokens without stopwords.
 - _tweet_punct_remover_: takes a tokenized tweet and returns a list of its tokens without punctuation.
@@ -28,12 +28,18 @@ This package is aimed to
 - _tweet_dataset_cleaner_: reads a csv with a column "tweet", and returns it with all the previous functions applied to it.
 
 ### To train a sentiment classifier
-- _tweet_dataset_cleaner_: reads a csv with a column "tweet" and a column "label", and returns the metrics from the training.
+- _tweet_dataset_cleaner_: reads a csv with a column "tweet" and a column "label", and returns the metrics from the training. It uses: CountVectorization and Tf-IDF transformation for word vectorization; and a Naive-Bayes classifier for the sentiment classification.
+
 
 ### Bonus
 There is an attempt to do the bonus exercise, but it does not work.
 
+
 ## Installation
+```sh
+pip install -i https://test.pypi.org/simple/ TechnicalTest==0.3.3 --extra-index-url https://pypi.org/simple/
+```
+## Usage
 ```sh
 from TechnicalTest import technical_test as tt
 ```
@@ -43,5 +49,5 @@ from TechnicalTest import technical_test as tt
 
 
 
-Based on: https://towardsdatascience.com/twitter-sentiment-analysis-classification-using-nltk-python-fa912578614c|
+Based on: https://towardsdatascience.com/twitter-sentiment-analysis-classification-using-nltk-python-fa912578614c
 
